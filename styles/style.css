@@ -76,26 +76,26 @@ ol {
 	inline-size: 399px;
 	block-size: 298px;
 	overflow: hidden auto;
-	/* margin-block-start: 35px; */
 	position: relative;
 }
 
 .content__list-item {
-	/* padding-bottom: 30px; */
+	inline-size: 399px;
+	display: flex;
+	padding-bottom: 30px;
 }
 
-.content__list-item:not(:first-child) {
-	/* margin-top: 32px; */
+.content__list-item:last-child {
+	padding-bottom: 0;
 }
 
 .content__card-link {
 	display: flex;
-	margin: 2px;
 	color: #fff;
 	text-decoration: none;
 	justify-content: center;
 	align-items: center;
-	block-size: 107px;
+	block-size: 106px;
 }
 
 .content__card-link_current {
@@ -140,7 +140,7 @@ ol {
 .content__video-card-thumbnail {
 	inline-size: 194px;
 	block-size: 103px;
-	align-self: center;
+	object-fit: cover;
 }
 
 .result {
@@ -170,8 +170,8 @@ ol {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: start;
-  align-items: end;
-  gap: 40px;
+	align-items: end;
+	gap: 40px;
 }
 
 .search-form__fieldset {
@@ -195,16 +195,22 @@ ol {
 	justify-content: space-between;
 	align-items: center;
 	cursor: pointer;
-  inline-size: fit-content;
-  gap: 5px;
+	inline-size: fit-content;
+	gap: 5px;
+}
+
+.search-form__label:has(.search-form__textfield:focus-visible) {
+	outline: 1px solid #fff;
+	outline-offset: 2px;
+}
+
+.search-form__label:has(.search-form__checkbox:focus-visible) {
+	outline: 1px solid #fff;
+	outline-offset: 3px;
 }
 
 /* .search-form__label-text {
 } */
-
-.search-form__label-text:hover {
-	text-decoration: underline;
-}
 
 .search-form__textfield {
 	font-family: Fira Sans Condensed;
@@ -260,10 +266,27 @@ ol {
 	background-color: transparent;
 	color: #fff;
 	border: 1px solid #fff;
-  block-size: 34px;
-  line-height: 21.6px;
+	block-size: 34px;
+	line-height: 21.6px;
 	text-align: center;
 	cursor: pointer;
+}
+
+.button:hover {
+	text-decoration: underline;
+}
+
+.button:focus {
+	outline: none;
+}
+
+.button:focus-visible {
+	outline: 1px solid #fff;
+	outline-offset: 2px;
+}
+
+.button:active {
+	background-color: #545050;
 }
 
 .title {
@@ -290,7 +313,7 @@ ol {
 
 .more-button {
 	inline-size: 393px;
-  padding: 0 0 1px 6px;
+	padding: 0 0 1px 6px;
 }
 
 /* .error-template {
