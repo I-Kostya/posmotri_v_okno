@@ -108,9 +108,13 @@ ol {
 }
 
 .content__video-card {
-	inline-size: 393px;
+	inline-size: 398px;
 	display: flex;
 	justify-content: space-between;
+}
+
+.content__video-card:focus {
+  outline: none;
 }
 
 .content__video-card:hover {
