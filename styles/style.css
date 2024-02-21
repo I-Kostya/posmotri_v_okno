@@ -65,7 +65,7 @@ ol {
 	block-size: 534px;
 	display: flex;
 	flex-direction: column;
-  justify-content: space-between;
+	justify-content: space-between;
 	row-gap: 20px;
 }
 
@@ -76,9 +76,9 @@ ol {
 .content__list {
 	inline-size: 399px;
 	block-size: 298px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	overflow: hidden auto;
 	position: relative;
 }
@@ -86,7 +86,7 @@ ol {
 .content__list-item {
 	inline-size: 399px;
 	display: flex;
-  justify-content: center;
+	justify-content: center;
 	padding-bottom: 26px;
 }
 
@@ -108,8 +108,8 @@ ol {
 }
 
 .content__video-card {
-	inline-size: 398px;
-  display: flex;
+	inline-size: 393px;
+	display: flex;
 	justify-content: space-between;
 }
 
@@ -137,7 +137,7 @@ ol {
 	line-height: 30px;
 	color: #fff;
 	text-transform: uppercase;
-  padding-top: 4px;
+	padding-top: 4px;
 	padding-bottom: 6px;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -311,7 +311,7 @@ ol {
 .title {
 	font-family: Oswald, sans-serif;
 	font-size: 75px;
-  font-weight: 700;
+	font-weight: 700;
 	line-height: 70.5px;
 	text-transform: uppercase;
 }
