@@ -77,7 +77,6 @@ ol {
 	block-size: 298px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	overflow: hidden auto;
 	position: relative;
 }
